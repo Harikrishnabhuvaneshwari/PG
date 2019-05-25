@@ -16,7 +16,7 @@ public class ComparatorCheck {
 			System.out.println(student);
 		}
 		System.out.println();
-		Collections.sort(students, new SortByRollno());
+		Collections.sort(students);
 		for (Student student : students) {
 			System.out.println(student);
 		}
