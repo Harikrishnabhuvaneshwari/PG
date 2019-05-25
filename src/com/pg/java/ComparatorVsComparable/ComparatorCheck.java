@@ -1,4 +1,4 @@
-package com.pg.java;
+package com.pg.java.ComparatorVsComparable;
 
 import java.util.ArrayList;
 import java.util.Collections;

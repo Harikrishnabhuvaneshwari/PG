@@ -1,4 +1,4 @@
-package com.pg.java;
+package com.pg.java.ComparatorVsComparable;
 
 
 public class Student implements Comparable<Student> {
