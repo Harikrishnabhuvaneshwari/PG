@@ -1,4 +1,4 @@
-package com.pg.java.singleton;
+package com.pg.java.designpatterns.singleton;
 
 public class DoubleCheckMethod {
 
