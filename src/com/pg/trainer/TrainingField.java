@@ -1,7 +1,9 @@
 package com.pg.trainer;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class TrainingField {
 
@@ -10,13 +12,12 @@ public class TrainingField {
 	public TrainingField(String str) {
 		this.str=str;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
 		return !this.str.equals(((TrainingField)obj).str);
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return str.hashCode();
@@ -34,6 +35,35 @@ public class TrainingField {
 		System.out.println("FB".hashCode());
 		System.out.println("Ea".hashCode());
 		System.out.println(tr.equals(tr2));
-	}
 
+		Interf interf=n->n*n;
+		System.out.println(interf.test(455));
+
+		Set<Integer> set=new HashSet<>();
+		set.add(2);
+		set.add(1);
+		set.add(3);
+		set.add(0);
+		set.add(-1);
+		System.out.println(set);
+
+		Thread t=new Thread(()-> {for(int i=0;i<10;i++){System.out.println("child method");}});
+		t.start();
+		for(int i=0;i<10;i++){
+			System.out.println("main thread");
+		}
+		
+		TrainingField t1=new TrainingField("f"){
+			@Override
+			public void syso() {
+				System.out.println("syso");
+			}
+		};
+		t1.syso();
+	}
+	
+	public void syso() {
+
+	}
+	
 }
