@@ -29,12 +29,14 @@ public class Driver {
 			}
 		};
 
+		int x=0;
 		Interf lambdaExp=()->{
 			int speed=200;	// local variable
 			//this always refers current class instance
 			System.out.println("Lambda Expression -->speed variable "+this.speed);
+			System.out.println(x); // local variable used within lambda expression is
+			//			implicitly final i.e., you cannot change its value.
 		};
-
 		annonymousInnerClass.check();
 		lambdaExp.check();
 	}

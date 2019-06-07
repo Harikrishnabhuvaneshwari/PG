@@ -1,0 +1,26 @@
+Abstract Class and Interface with default methods are different.
+
+Interface with default methods != Abstract class;
+
+* In Abstract class we can declare  instance variable but we can't in interface bcoz
+  all variables in interface are public static final by default.
+
+
+* Abstract class can declare constructors to initialize instance variable but in interface
+  we cannot declare constructors.
+  
+* Interface never talks about state of the object but abstract class may talk about 
+  the state of the object in some case as it contains instance variables.
+  
+* We can declare static(for initialization purpose) and instance blocks in abstract class  but in
+  interface we cannot declare static blocks and instance methods as it contains default,static
+  and abstract methods.
+  
+* Interface can override object class methods but can't provide implementations for them as
+  default methods but abstract class can override object class methods and provide the 
+  required implementations for them.
+  
+
+      
+  
+  

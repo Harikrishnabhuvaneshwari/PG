@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class TrainingField {
+public class TrainingField implements Interf{
 
 	String str;
 
@@ -60,10 +60,22 @@ public class TrainingField {
 			}
 		};
 		t1.syso();
+		interf.print("dddddddddd");
+		tr.print("f");
 	}
 	
 	public void syso() {
 
+	}
+
+	@Override
+	public int test(int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public void print(Object s){
+		System.out.println("-------------");
 	}
 	
 }
